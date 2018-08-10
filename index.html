@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Cygnet</title>
+    <title>LinenHouse</title>
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
 <body>
-<div class="wrapper" style="min-height: 100vh;">
-    <header>
-        <section class="logo"><img src="./assets/cyglogo.png" alt="CYGNET"></section>
-        <section class="info">
-            <div class="info-block">
-                <img src="./assets/australia.svg" alt="Australian owned">
-                <h2>Australian owned</h2>
-            </div>
-            <div class="info-block">
-                <img src="./assets/truck.svg" style="transform: scale(1.1)" alt="Free delivery">
-                <h2>Free delivery</h2>
-            </div>
-            <div class="info-block">
-                <img src="./assets/lock.svg" alt="Secure Shopping">
-                <h2>Secure Shopping</h2>
-            </div>
-            <div class="info-block">
-                <img src="./assets/arrow.svg" alt="2 Year Warranty">
-                <h2>2 Year Warranty</h2>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section class="gallery">
-            <h1>10cm Lightning™ to USB Cable in Black</h1>
+    <div class="wrapper" style="min-height: 100vh;">
+        <header>
+            <section class="logo"><img src="./assets/linenhouse.png" alt="LineHouse"></section>
+            <section class="info">
+                <div class="info-block">
+                    <img src="./assets/coffee-cup.svg" alt="Designed in Melbourne">
+                    <h2>Designed in Melbourne</h2>
+                </div>
+                <div class="info-block">
+                    <img src="./assets/free-delivery.svg" style="transform: scale(1.1)" alt="Free Shipping">
+                    <h2>Free Shipping</h2>
+                </div>
+                <div class="info-block">
+                    <img src="./assets/exchange.svg" alt="30 Day Returns">
+                    <h2>30 Day Returns</h2>
+                </div>
+                <div class="info-block">
+                    <img src="./assets/group.svg" alt="Family owned business">
+                    <h2>Family owned business</h2>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="gallery">
+
 <!-- =========================================== -->
 <!-- begin responsive CSS rollover photo gallery -->
 <!-- =========================================== -->
@@ -41,16 +43,16 @@
 <style>
 /* colors and borders */
 .pic_gallery {  } /* gallery border color */
-.pic_gallery .pic_sm div { border:1px solid #E3E3E3; } /* thumbnail cell border */
-.pic_gallery .pic_lg div { border:1px solid #E3E3E3; } /* main photo cell border */
+.pic_gallery .pic_sm div { } /* thumbnail cell border */
+.pic_gallery .pic_lg div { } /* main photo cell border */
 .pic_gallery .pic_sm img { } /* thumbnail border */
 .pic_gallery .pic_lg img { } /* main photo border */
-.pic_gallery .pic_set:hover .pic_sm div { color: #4d94ff; } /* thumbnail border hover color */
+.pic_gallery .pic_set:hover .pic_sm div { color: red; } /* thumbnail border hover color */
 .pic_gallery { background-color:#FFFFFF; } /* gallery background color */
 .pic_gallery .pic_sm div, 
 .pic_gallery .pic_lg div { background-color:#FFFFFF; } /* cell background color */
 .pic_gallery .pic_head,
-.pic_gallery .pic_foot { color:#000000;} /* gallery text color */
+.pic_gallery .pic_foot { color:#333333;} /* gallery text color */
 
 /* text */
 .pic_gallery { font-family:arial; font-size:16px; }
@@ -66,27 +68,27 @@
 .pic_gallery .pic_lg img {  } /* image corners and shadows */
 
 /* sizing, matting, and margins (all values interact and vary by aspect ratio and image count) */
-.pic_gallery { width:90%; max-width:635px; } /* change this % in media queries */
-.pic_gallery .pic_gal_6x1 { width:100%; padding-top:116.66%; }
-.pic_gallery .pic_gal_6x1 .pic_gal_cells { width:100%; height:100%; } /* sets padding around entire gallery */
-.pic_gallery .pic_gal_6x1 .pic_sm { width:13.88%; height:11.9%; margin:1.38%; }
-.pic_gallery .pic_gal_6x1 .pic_lg { width:97.22%; height:83.33%; margin:1.38%; }
-.pic_gallery .pic_gal_6x1 .pic_sm img { max-width:100%; max-height:100%; } /* sets margin around thumbnail */
-.pic_gallery .pic_gal_6x1 .pic_lg img { max-width:97.14%; max-height:97.14%; } /* sets margin around large photo */
+.pic_gallery { width:100%; max-width:758px; } /* change this % in media queries */
+.pic_gallery .pic_gal_5x1 { width:100%; padding-top:109.95%; }
+.pic_gallery .pic_gal_5x1 .pic_gal_cells { width:97.01%; height:97.28%; } /* sets padding around entire gallery */
+.pic_gallery .pic_gal_5x1 .pic_sm { width:16%; height:19.16%; margin:0.46%; }
+.pic_gallery .pic_gal_5x1 .pic_lg { width:82.15%; height:99.16%; margin:0.46%; }
+.pic_gallery .pic_gal_5x1 .pic_sm img { max-width:96.15%; max-height:97.08%; } /* sets margin around thumbnail */
+.pic_gallery .pic_gal_5x1 .pic_lg img { max-width:99.25%; max-height:99.43%; } /* sets margin around large photo */
 
 /* structural */
 .pic_gallery, .pic_gallery * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-.pic_gallery, .pic_gallery .pic_gal { position:relative; margin:auto; }
+.pic_gallery, .pic_gallery .pic_gal { position:relative; margin:auto;     margin-top: 60px;}
 .pic_gallery .pic_gal_cells { position:absolute; left:0; top:0; bottom:0; right:0; margin:auto; }
 .pic_gallery img { position:absolute; width:auto; height:auto; left:0; top:0; bottom:0; right:0; margin:auto; }
 .pic_gallery .pic_sm { position:relative; overflow:hidden; float:left; display:block; }
-.pic_gallery .pic_lg { position:absolute; overflow:hidden; display:none; left:0%; top:0%; z-index:1; }
+.pic_gallery .pic_lg { position:absolute; overflow:hidden; display:none; right:0%; top:0%; z-index:1; }
 .pic_gallery .pic_sm div, 
 .pic_gallery .pic_lg div { position:absolute; left:0%; top:0%; right:0%; bottom:0%; }
 .pic_gallery .pic_lg { display:none; }
-.pic_gallery .pic_lg.pic_main { position:relative; display:block; float:left; z-index:0; } /* turn on default large photo */
+.pic_gallery .pic_lg.pic_main { position:relative; display:block; float:right; z-index:0; } /* turn on default large photo */
 .pic_gallery .pic_set:hover .pic_sm div { opacity:.5; border:1px solid; }
-.pic_gallery .pic_set:hover .pic_lg { display:block; left:0%; top:0%; }
+.pic_gallery .pic_set:hover .pic_lg { display:block; right:0%; top:0%; }
 </style>
 
 <!--[if lt ie 8]>
@@ -103,49 +105,31 @@
 <!-- photo gallery -->
 <div class="pic_gallery">
 <div class="pic_head"></div>
-<div class="pic_gal pic_gal_6x1"><!-- thumbnail rows-columns -->
+<div class="pic_gal pic_gal_5x1"><!-- thumbnail rows-columns -->
 <div class="pic_gal_cells"><!-- positioning large photos -->
 
 <!-- default large photo -->
 <div class="pic_lg pic_main"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_1.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_h1.jpg" >
 </div></div>
 
-<!-- thumbnails (6 max) -->
+<!-- thumbnails (5 max) -->
 <span class="pic_set"><div class="pic_sm"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_1.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_h1.jpg" >
 </div></div><div class="pic_lg"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_1.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_h1.jpg" >
 </div></div></span>
 
 <span class="pic_set"><div class="pic_sm"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_2.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_h2.jpg" >
 </div></div><div class="pic_lg"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_2.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_h2.jpg" >
 </div></div></span>
 
 <span class="pic_set"><div class="pic_sm"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_3.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_d1r.jpg" >
 </div></div><div class="pic_lg"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_3.jpg" >
-</div></div></span>
-
-<span class="pic_set"><div class="pic_sm"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_4.jpg" >
-</div></div><div class="pic_lg"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_4.jpg" >
-</div></div></span>
-
-<span class="pic_set"><div class="pic_sm"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_5.jpg" >
-</div></div><div class="pic_lg"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_5.jpg" >
-</div></div></span>
-
-<span class="pic_set"><div class="pic_sm"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_6.jpg" >
-</div></div><div class="pic_lg"><div>
-<img src="https://msppub.s3.amazonaws.com/cygnett/CY2009PCCSL_6.jpg" >
+<img src="https://www.linenhouse.com/media/catalog/product/cache/image/645x860/e9c3970ab036de70892d86c6d221abfe/l/h/lh_creswick_grey_qcs_d1r.jpg" >
 </div></div></span>
 
 </div><!-- end pic_gal_cells -->
@@ -154,78 +138,103 @@
 </div><!-- end photo gallery -->
 <!-- =========================================== -->
 <!-- end responsive CSS rollover photo gallery   -->
+<!-- =========================================== -->
 
-        </section>
-        <section class="main-text">
-            <h1>10cm Lightning™ to USB Cable in Black</h1>
-            <h2>Cable Features</h2>
-            <p class="desktop-text">The Source Lightning™ to USB Cable features the latest in USB technology delivering
-                a fast and safe link
-                to
-                your Apple devices in an ultra-portable 10cm length cable.</p>
-            <p class="mobile-text">
-                The Source Lightning™ to USB Cable features the latest in USB technology delivering a fast and safe link
-                to your Apple devices in a versatile 1m long reinforced braided cable design.
-            </p>
-            <ul>
-                <li>Fast-charge and sync</li>
-                <li>Compact 10cm cable</li>
-                <li>Reversible USB connector design</li>
-                <li>Injection moulded connectors</li>
-                <li>Compatible with a wide range of Apple devices - Apple MFi certified ensures that your cable will
-                    continue to work with Apple iOS updates
-                </li>
-                <li>Black</li>
-            </ul>
-            <h2 class="mobile-text">Fast-charge and sync</h2>
-            <p class="mobile-text">Reinforced braided 1m length cable
-                Reversible USB connector design
-                Injection moulded connectors
-                Compatible with a wide range of Apple devices - Apple MFi certified ensures that your cable will
-                continue to work with Apple iOS updates
-                Black
-            </p>
-            <h2>Stay Connected</h2>
-            <p>The Source Lightning™ to USB Cable is a fast charging and data transfer cable for all your latest Apple
-                devices with its 2.4 Apms. Simply plug the USB end directly into any USB port to stay connected anywhere
-                whether at home or work.</p>
-            <p>
-                Features a user friendly reversible USB connector which means that you can plug into your device in any
-                direction. The short 10cm length is perfect for tangle-free travel and connecting to the Cygnett Power
-                Bank
-                series.</p>
-            <h2>Compatibility</h2>
-            <p>Phone 5/5s and 5c, 6, 6 Plus, 6s Plus and 6s, 7, 7 Plus and SE
-                <br>
-                iPad Air, iPad Air 2, iPad 4th Gen, iPad Mini, iPad Mini 2, Mini 3, Mini 4 and iPad Pro (9.7” & 12.9”)
-                <br>
-                iPod Touch 5th Gen 16GB /32GB /64GB, iPod 6th Gen and iPod Nano 7th Gen.</p>
-        </section>
-    </main>
-</div>
-<section class="info">
-    <div class="info-block">
-        <img src="./assets/australia.svg" alt="Australian owned">
-        <h2>Australian owned</h2>
+
+
+            </section>
+            <section class="main-text">
+              <h1>Creswick Flannelette quilt cover set</h1>
+              <br>
+
+               
+                <p>* Linen House Willow Quilt Cover Set 180 x 210 Double - Blue <br> * Includes 2 pillowcases measuring 48 x 73CM. Made of cotton <br> * Soft and warm. Machine washable for added convenience <br> * Quilt is cut and sewn four ways, creating a subtle geometric effect <br> * Warm gentle machine wash separately before use. Wash inside out. Do not bleach. Do not tumble dry.Warm iron on reverse if required. Do not dry clean <br><br>
+
+
+                    <p>Brand: Linen House <br> Bed Size: Double <br> Model: 01702D272 <br> Pattern: Solid <br> Colour: Blue <br> Dimensions: <br> Quilt Cover: 180 x 210CM <br> Pillowcase: 48 x 73CM <br>
+
+
+                    </p>
+                    
+                    <p>Material: Cotton <br>
+Pack Contents: 1x Quilt Cover, 2x Pillowcases</p>
+                       <h4>Features</h4>
+                        <p>
+                            * Quilt Measures 180 x 210CM <br>
+* Pillowcases Measure 48 x 73CM <br>
+* Made of Premium Quality Cotton Cord Velvet <br>
+* Quilt is Cut and Sewn Four Ways For a Geometric Effect<br> 
+* Soft and Warm <br>
+* Machine Washable <br><br>
+                        </p>
+                        <p>Willow, available in five outstanding colours, is made from premium-quality cotton cord velvet. Soft, warm and machine-washable, the quilt cover sets are cut and sewn four ways, creating a subtle geometric effect due to the natural direction of the cord. Mixing or matching with our Willow European pillowcases and cushions will complete your winter bedroom wonderland. Brand: Linen House Size: 180 x 210CM (1 x Quilt Cover) 48 x 73CM (2x Pillowcases) Material: Cotton </p>
+                        
+                        <p>Warm gentle machine wash separately before use. Wash inside out. Do not bleach. Do not tumble dry. Warm iron on reverse if required. Do not dry clean.</p>
+
+
+
+               
+            </section>
+        </main>
     </div>
-    <div class="info-block">
-        <img src="./assets/truck.svg" style="transform: scale(1.1)" alt="Free delivery">
-        <h2>Free delivery</h2>
+    <section class="info">
+        <div class="info-block">
+            <img src="./assets/coffee-cup.svg" alt="Disegned in Melbourne">
+            <h2>Disegned in Melbourne </h2>
+        </div>
+        <div class="info-block">
+            <img src="./assets/free-delivery.svg" style="transform: scale(1.1)" alt="Free Shipping">
+            <h2>Free Shipping</h2>
+        </div>
+        <div class="info-block">
+            <img src="./assets/exchange.svg" alt="30 Day Returns">
+            <h2>30 Day Returns</h2>
+        </div>
+        <div class="info-block">
+            <img src="./assets/group.svg" alt="Family owned business">
+            <h2>Family owned business</h2>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <div class="underFooter">
+        <div class="upper">
+           <div class="thirstFooter">
+           <div class="hiddenLogo">
+               <img src="/assets/linenhouse.png" alt="">
+           </div>
+            <div class="thirstFooterText">
+                <h2>See our full range of luxury home products.</h2>
+            </div>
+            <div class="button">
+                Browse store
+            </div>
+            </div>
+        </div>
+        <div class="bottom">
+           <div class="bottomWrap">
+            <div class='bottomLogo'>
+                <img src="./assets/linenhouse-down.png" alt="">
+            </div>
+            <div class='bottomText'>
+                <p>
+                    Linen House is always at the forefront of fashion and homeware trends. Hiccups, Linen House for Kids, is our enchanting brand of children’s bed linen and coordinating homewares. Created in 2004, Hiccups is designed to make your little one’s bedroom colourful, fun and universally delightful, with many of our exciting themes lovingly hand-painted. Our studio works collaboratively with some of Australia’s most respected and admired designers as well as many international brands and retailers, including Alex Perry, Collette Dinnigan, Marie Claire Paris, David Jones and Myer.
+                </p>
+            </div>   
+           </div>
+            
+        </div>
     </div>
-    <div class="info-block">
-        <img src="./assets/lock.svg" alt="Secure Shopping">
-        <h2>Secure Shopping</h2>
+    <div class="downLogos">
+        <div class="ebay">
+            <img src="./assets/eBay.png" alt="">
+        </div>
+        <div class="merchant">
+            <img src="./assets/ms_blacklogo.png" alt="">
+        </div>
     </div>
-    <div class="info-block">
-        <img src="./assets/arrow.svg" alt="2 Year Warranty">
-        <h2>2 Year Warranty</h2>
-    </div>
-</section>
-<footer>
-    <img src="./assets/logo-white.png" alt="CYGNET">
-    <h2>Better digital experiences through good design.</h2>
-    <a href="#">Browse store</a>
-</footer>
+    
 
 </body>
+
 </html>
