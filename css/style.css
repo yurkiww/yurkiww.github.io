@@ -282,7 +282,7 @@ footer a:hover {
 /*    margin-left: -13%;*/
     }
     .thirstFooter{
-        width: 100% !important;
+        width: auto;
         flex-wrap: wrap !important;
     }
 
@@ -334,7 +334,7 @@ footer a:hover {
 
 
 .thirstFooter{
-    width: 65%;
+
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
