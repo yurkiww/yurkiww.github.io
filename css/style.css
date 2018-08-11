@@ -244,7 +244,8 @@ footer a:hover {
   }
   main .main-text h1 {
       position: absolute;
-      top:95px
+      top:95px;
+    text-align: center;
       
 
   }
