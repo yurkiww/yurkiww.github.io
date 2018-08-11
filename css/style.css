@@ -336,6 +336,14 @@ footer a:hover {
     line-height: 1.1;
   }
 }
+@media only screen and (max-device-width: 320px) and (max-width: 320px) {
+    h1 {
+    font-size: 23px !important;
+    top:85px!important;
+    }
+   
+    
+}
 
 
 .thirstFooter{
