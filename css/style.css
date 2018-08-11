@@ -288,7 +288,7 @@ footer a:hover {
 
   body > section.info {
     border-top: 1px solid #D8D8D8;
-    padding: 10%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
