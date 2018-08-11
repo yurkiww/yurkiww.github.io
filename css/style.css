@@ -245,9 +245,6 @@ footer a:hover {
   main .main-text h1 {
       position: absolute;
       top:95px;
-    text-align: center;
-      
-
   }
   main .main-text h2 {
     margin: 20px 0;
@@ -339,7 +336,7 @@ footer a:hover {
 @media only screen and (max-device-width: 320px) and (max-width: 320px) {
     h1 {
     font-size: 23px !important;
-    top:85px!important;
+    top:85px!import;
     }
    
     
