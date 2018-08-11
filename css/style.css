@@ -17,6 +17,9 @@ header {
     margin: auto;
 
 }
+.ebay p{
+    margin: 0 5px;
+}
 header * {
   box-sizing: border-box;
 }
