@@ -407,7 +407,9 @@ main .main-text h2 {
 body > section.info {
     display: none;
 }
-
+.info {
+      display: none;
+    }
 footer {
     padding: 8% 0;
     background-image: url("../assets/lh-living-home-cushions-subcategory-banner-2920x600-_2x%20(1).png");
@@ -477,6 +479,29 @@ footer a:hover {
     .wrapper {
         min-height: unset !important;
     }
+    .info {
+        border-top: 1px solid #D8D8D8;
+        padding: 5% 1% 5% 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-block{
+        margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    }
+    .info-block img {
+    height: 30px;
+    margin-right: 15px;
+}
+    .info-block h2 {
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #707070;
+}
     header {
         width: 100%;
     }
